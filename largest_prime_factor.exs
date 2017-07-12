@@ -34,11 +34,7 @@ defmodule PrimeFactor do
     r = :random.uniform(p-1)
     t = mpow(r, p-1, p)
 
-    if t == 1 do
-      true
-    else
-      false
-    end
+    return t == 1
   end
 
   def mpow(n, 1, _) do
